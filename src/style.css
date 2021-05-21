@@ -1,148 +1,193 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-  
-  *, *::before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  :focus, :active {
-    outline: none;
-  }
-  
-  a:focus, a:active {
-    outline: none;
-  }
-  
-  nav, footer, header, aside {
-    display: block;
-  }
-  
-  html, body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
-  
-  input, button, textarea {
-    font-family: inherit;
-  }
-  
-  input::-ms-clear {
-    display: none;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  button ::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-  }
-  
-  a, a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
-  
-  ul li {
-    list-style: none;
-  }
-  
-  img {
-    vertical-align: top;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: 400;
-  }
-  
-  /* <-----------------------------------------> */
-  
-  body {
-    background-color: rgb(228, 225, 225);
-  }
-  
-  header {
-    background: rgb(29, 175, 0);
-    width: 100%;
-    height: 70px;
-  }
-  
-  h1{
-    font-size: 60px;
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-  }
-  
-  .main {
-    width: 1100px;
-    height: auto;
-    margin: 0 auto;
-    padding: 100px 100px 100px 100px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .simpleCalculate {
-    height: 300px;
-    width: 400px;
-    background: rgb(49, 209, 142);
-  }
-  
-  .titleCalculate {
-    margin: 30px 0px 0px 120px;
-    display: block;
-  }
-  
-  .inputArea {
-    margin: 50px 20px 0px 50px;
-    height: 25px;
-    width: 60px;
-    border: 1px solid black;
-  }
-  
-  .final {
-    margin: 30px 0px 0px 50px;
-    width: 100px;
-    background: rgb(49, 209, 142);
-    font-size: 40px;
-    color: white;
-  }
-  
-  .CalculateFormula {
-    margin: 50px 20px 0px 50px;
-    display: block;
-  }
-  
-  .proCalculate {
-    height: 400px;
-    width: 400px;
-    background: rgb(49, 209, 201);
-  }
-  
-  .finalPro {
-    margin: 30px 0px 0px 50px;
-    width: 100px;
-    background: rgb(49, 209, 201);
-    font-size: 40px;
-    color: white;
-  }
-  .kg{
-    color: white;
-  }
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* <-----------------------------------------> */
+
+body {
+  background-color: rgb(228, 225, 225);
+}
+
+header {
+  background: #98d648;
+  width: 100%;
+  height: 70px;
+  font-size: 60px;
+  color: white;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  color: #6fbe08;
+  font-weight: 700;
+}
+
+.main {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 100px 100px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simpleCalculate {
+  height: 300px;
+  width: 400px;
+  background: #98d648;
+}
+
+.simpleCalculate:hover {
+  box-shadow: #65ac08 1px 0 50px;
+}
+
+.titleCalculate {
+  margin: 30px 0px 30px 0px;
+  text-align:center;
+  display: block;
+  color: white;
+  font-size: 30px;
+}
+
+.nameArea {
+  display: inline-block;
+  width: 160px;
+  margin: 0px 0px 0px 20px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+}
+
+.inputArea {
+  margin: 0px 25px 0px 40px;
+  height: 25px;
+  width: 50px;
+  padding: 0px 0px 0px 15px;
+}
+
+.final {
+  margin: 40px 0px 0px 230px;
+  width: 100px;
+  background: #98d648;
+  font-size: 40px;
+  color: white;
+}
+
+.buttonCalculate {
+  margin: 50px 20px 0px 115px;
+  display: block;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttonCalculate:hover {
+  background: #000;
+  color: white;
+  text-shadow: white 1px 0 10px;
+  box-shadow: black 1px 0 10px;
+}
+
+.proCalculate {
+  height: 400px;
+  width: 400px;
+  background: rgb(49, 209, 201);
+}
+
+.proCalculate:hover {
+  box-shadow: rgb(5, 139, 180) 1px 0 50px;
+}
+
+.finalPro {
+  margin: 40px 0px 0px 200px;
+  width: 135px;
+  background: rgb(49, 209, 201);
+  font-size: 40px;
+  color: white;
+}
+
+.kg {
+  color: white;
+  font-size: 30px;
+}
+
+.inputPoints {
+  margin: 0px 0px 20px 0px;
+}
+
+.indexValue {
+  color: white;
+  font-size: 18px;
+}

@@ -3,50 +3,55 @@ import React, { useState } from 'react'
 const Calculate = () => {
 
     const [area, setArea] = useState();
+    const [chislovaNorma, setChislovaNorma] = useState();
+    const [masa, setMasa] = useState();
+    const [posivnaPrydatnist, setPosivnaPrydatnist] = useState();
 
-    const [data, setData] = useState({
-        kilkistNasinnya: 0,
-        masaNasinnya: 0,
-        posivnaPrydatnist: 0,
-        chystotaNasinnya: 0,
-        shogistNasinnya: 0,
-    });
+
     const [equal, setEqual] = useState("");
     const [proEqual, setproEqual] = useState("");
 
-    const calculate = (data) => {
-        const { kilkistNasinnya, masaNasinnya, posivnaPrydatnist, chystotaNasinnya, shogistNasinnya } = data
-    }
-
-    function enterData(e) {
-        setData(e.target.value);
-    }
 
     function enterArea(e) {
         setArea(e.target.value);
     }
 
-    function cultureCalculate() {
-        setEqual(area * 250);
+    const enterChislovaNorma = (e) => {
+        setChislovaNorma(e.target.value);
     }
-    function proCalculate(){
-        setproEqual(data * 10);
+
+    const enterMasa = (e) => {
+        setMasa(e.target.value);
+    }
+
+    const enterPosivnaPrydatnist = (e) => {
+        setPosivnaPrydatnist(e.target.value);
+    }
+
+    function cultureCalculate() {
+        setEqual(Number(area) * 250);
+    }
+    function proCalculate() {
+        setproEqual((chislovaNorma * masa * 100) / posivnaPrydatnist);
     }
 
     return (
         <>
-        <h1>Норма висіву пшениці</h1>
+            <h1>Норма висіву пшениці</h1>
             <div className="main">
 
                 <div className="simpleCalculate">
                     <span className="titleCalculate">Простий калькулятор</span>
-                    <input className="inputArea" type="number" value={area} onChange={enterArea} />
-                    <span>га</span>
+                    <div className="inputPoints">
+                        <span className="nameArea">Площа</span>
+                        <input className="inputArea" type="number" min="0" value={area} onChange={enterArea} />
+                        <span className="indexValue">га</span>
+                    </div>
                     <input
                         type="submit"
-                        className="CalculateFormula"
+                        className="buttonCalculate"
                         onClick={cultureCalculate}
-                        value="Обчислити"
+                        value="Порахувати"
                     />
                     <input className="final" type="number" value={equal} />
                     <span className="kg">кг</span>
@@ -55,26 +60,41 @@ const Calculate = () => {
 
                 <div className="proCalculate">
                     <span className="titleCalculate">Розширений калькулятор</span>
-                    <span>Кількість насіння на 1 га</span>
-                    <input className="inputArea" 
-                           type="number" 
-                           value={data.kilkistNasinnya} 
-                           onChange={enterData} />
-                           <br></br>
-                    <span>Схожість насіння</span>
-                    <input className="inputArea" 
-                           type="number" 
-                           value={data.shogistNasinnya} 
-                           onChange={enterData} />
-                    <span>df</span>
+
+                    <div className="inputPoints">
+                        <span className="nameArea">Числова норма</span>
+                        <input className="inputArea"
+                            type="number"
+                            value={chislovaNorma}
+                            onChange={enterChislovaNorma} />
+                        <span className="indexValue">млн шт./га</span>
+                    </div>
+
+                    <div className="inputPoints">
+                        <span className="nameArea">Маса 1000 насінин</span>
+                        <input className="inputArea"
+                            type="number"
+                            value={masa}
+                            onChange={enterMasa} />
+                        <span className="indexValue">г</span>
+                    </div>
+
+                    <div className="inputPoints">
+                        <span className="nameArea">Посівна придатність</span>
+                        <input className="inputArea"
+                            type="number"
+                            value={posivnaPrydatnist}
+                            onChange={enterPosivnaPrydatnist} />
+                        <span className="indexValue">%</span>
+                    </div>
                     <input
                         type="submit"
-                        className="CalculateFormula"
+                        className="buttonCalculate"
                         onClick={proCalculate}
-                        value="Обчислити"
+                        value="Порахувати"
                     />
-                    <input className="finalPro" type="number" value={proEqual} />
-                        <span className="kg">кг</span>
+                    <input className="finalPro" type="number" value={Math.round(proEqual * 100) / 100} />
+                    <span className="kg">кг</span>
                 </div>
             </div>
         </>
