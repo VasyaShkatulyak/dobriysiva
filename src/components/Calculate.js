@@ -74,7 +74,7 @@ const Calculate = () => {
                         value="Обчислити"
                     />
                     <input className="finalPro" type="number" value={proEqual} />
-                    <span className="kg">кг</span>
+                        <span className="kg">кг</span>
                 </div>
             </div>
         </>
