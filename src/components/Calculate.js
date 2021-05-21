@@ -1,20 +1,13 @@
 import React, { useState } from 'react'
 
-const Calculate = () => {
+const ProCalculate = () => {
 
-    const [area, setArea] = useState();
     const [chislovaNorma, setChislovaNorma] = useState();
     const [masa, setMasa] = useState();
     const [posivnaPrydatnist, setPosivnaPrydatnist] = useState();
 
 
-    const [equal, setEqual] = useState("");
     const [proEqual, setproEqual] = useState("");
-
-
-    function enterArea(e) {
-        setArea(e.target.value);
-    }
 
     const enterChislovaNorma = (e) => {
         setChislovaNorma(e.target.value);
@@ -28,9 +21,6 @@ const Calculate = () => {
         setPosivnaPrydatnist(e.target.value);
     }
 
-    function cultureCalculate() {
-        setEqual(Number(area) * 250);
-    }
     function proCalculate() {
         setproEqual((chislovaNorma * masa * 100) / posivnaPrydatnist);
     }
@@ -39,24 +29,6 @@ const Calculate = () => {
         <>
             <h1>Норма висіву пшениці</h1>
             <div className="main">
-
-                <div className="simpleCalculate">
-                    <span className="titleCalculate">Простий калькулятор</span>
-                    <div className="inputPoints">
-                        <span className="nameArea">Площа</span>
-                        <input className="inputArea" type="number" min="0" value={area} onChange={enterArea} />
-                        <span className="indexValue">га</span>
-                    </div>
-                    <input
-                        type="submit"
-                        className="buttonCalculate"
-                        onClick={cultureCalculate}
-                        value="Порахувати"
-                    />
-                    <input className="final" type="number" value={equal} />
-                    <span className="kg">кг</span>
-                </div>
-
 
                 <div className="proCalculate">
                     <span className="titleCalculate">Розширений калькулятор</span>
@@ -93,7 +65,7 @@ const Calculate = () => {
                         onClick={proCalculate}
                         value="Порахувати"
                     />
-                    <input className="finalPro" type="number" value={Math.round(proEqual * 100) / 100} />
+                    <input className="finalPro" type="number" disabled value={Math.round(proEqual * 100) / 100} />
                     <span className="kg">кг</span>
                 </div>
             </div>
@@ -101,4 +73,4 @@ const Calculate = () => {
     )
 }
 
-export default Calculate;
+export default ProCalculate;
