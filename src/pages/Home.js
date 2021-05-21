@@ -7,6 +7,7 @@ export default memo(function Home() {
             <Header />
 
             <div>Home page</div>
+
         </>
     )
 })

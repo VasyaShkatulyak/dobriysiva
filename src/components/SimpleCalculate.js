@@ -29,9 +29,11 @@ const SimpleCalculate = () => {
                         onClick={cultureCalculate}
                         value="Порахувати"
                     />
+                    <span className="indexKg">Потрібно зерна</span>
                     <input className="final" type="number" disabled value={equal} />
                     <span className="kg">кг</span>
                 </div>
+                
         </>
     )
 }

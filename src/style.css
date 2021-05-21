@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* <-----------------------------------------> */
+/* <-------------------------------------------> */
 
 body {
   background-color: rgb(228, 225, 225);
@@ -115,6 +115,7 @@ h1 {
   height: 300px;
   width: 400px;
   background: #98d648;
+  
 }
 
 .simpleCalculate:hover {
@@ -146,7 +147,7 @@ h1 {
 }
 
 .final {
-  margin: 40px 0px 0px 230px;
+  margin: 40px 0px 0px 100px;
   width: 100px;
   background: #98d648;
   font-size: 40px;
@@ -180,8 +181,8 @@ h1 {
 }
 
 .finalPro {
-  margin: 40px 0px 0px 200px;
-  width: 135px;
+  margin: 40px 0px 0px 70px;
+  width: 130px;
   background: rgb(49, 209, 201);
   font-size: 40px;
   color: white;
@@ -199,4 +200,36 @@ h1 {
 .indexValue {
   color: white;
   font-size: 18px;
+}
+.indexKg{
+  color: white;
+  margin: 0px 0px 0px 20px;
+  font-size: 19px;
+}
+
+
+.login{
+  margin: 0 auto;
+  height: 500px;
+  width: 400px;
+  background: white;
+}
+
+.data{
+  display: block;
+  height: 30px;
+  width: 350px;
+  border: 2px solid green;
+  margin: 20px 0px 10px 20px;
+  font-size: 18px;
+}
+
+.LoginButton{
+  height: 50px;
+  width: 200px;
+  background: rgb(31, 233, 31);
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  margin: 50px 0px 10px 90px;
 }

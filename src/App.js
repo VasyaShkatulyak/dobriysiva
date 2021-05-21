@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import SimplePage from './pages/SimplePage'
 import ProPages from './pages/ProPages'
+import Login from './pages/Login'
 
 import {
   BrowserRouter as Router,
@@ -24,6 +25,10 @@ function App() {
 
         <Route path="/pagepro">
           <ProPages />
+        </Route>
+
+        <Route path="/logIn">
+          <Login />
         </Route>
 
       </Switch>

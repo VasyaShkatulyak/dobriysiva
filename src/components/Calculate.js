@@ -65,6 +65,7 @@ const ProCalculate = () => {
                         onClick={proCalculate}
                         value="Порахувати"
                     />
+                    <span className="indexKg">Потрібно зерна</span>
                     <input className="finalPro" type="number" disabled value={Math.round(proEqual * 100) / 100} />
                     <span className="kg">кг</span>
                 </div>
