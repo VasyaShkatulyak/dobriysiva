@@ -1,8 +1,23 @@
 import React, {useEffect, useState, memo } from 'react'
-import {Header} from '../components/Header'
+import {Header} from '../Header/Header'
 
 export default memo(function Home() {
-    
+
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const [isValid, setIsValid] = useState(false)
+
+    const formSubmition = () => {
+        if(email === '' || password === ''){
+            alert("Логін або пароль неправильний")
+        }
+        else {
+            setIsValid(true)
+        }
+    }
+
+
     return (
         <>
             <Header />

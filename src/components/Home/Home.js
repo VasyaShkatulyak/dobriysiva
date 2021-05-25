@@ -1,12 +1,13 @@
 import React, { memo } from 'react'
-import {Header} from '../components/Header'
-import ProCalculate from '../components/Calculate'
+import {Header} from '../Header/Header'
 
 export default memo(function Home() {
     return (
         <>
             <Header />
-            <ProCalculate />
+
+            <h1>Home page</h1>
+
         </>
     )
 })

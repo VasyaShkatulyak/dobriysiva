@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ProCalculate = () => {
+const CalculateBarleyPro = () => {
 
     const [chislovaNorma, setChislovaNorma] = useState();
     const [masa, setMasa] = useState();
@@ -27,8 +27,6 @@ const ProCalculate = () => {
 
     return (
         <>
-            <h1>Норма висіву пшениці</h1>
-            <div className="main">
 
                 <div className="proCalculate">
                     <span className="titleCalculate">Розширений калькулятор</span>
@@ -69,9 +67,8 @@ const ProCalculate = () => {
                     <input className="finalPro" type="number" disabled value={Math.round(proEqual * 100) / 100} />
                     <span className="kg">кг</span>
                 </div>
-            </div>
         </>
     )
 }
 
-export default ProCalculate;
+export default CalculateBarleyPro;

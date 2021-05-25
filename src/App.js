@@ -1,13 +1,15 @@
-import Home from "./pages/Home";
-import SimplePage from './pages/SimplePage'
-import ProPages from './pages/ProPages'
-import Login from './pages/Login'
+import Home from "./components/Home/Home";
+import ProPages from './components/Culture/Berley'
+import Login from './components/Login/Login'
+import Pshenica from "./components/Culture/Pshenica";
+import Oves from "./components/Culture/Oves";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+
 
 function App() {
   return (
@@ -19,12 +21,16 @@ function App() {
           <Home />
         </Route>
 
-        <Route path="/page">
-          <SimplePage />
+        <Route path="/pshenica">
+          <Pshenica />
         </Route>
 
-        <Route path="/pagepro">
+        <Route path="/berley">
           <ProPages />
+        </Route>
+
+        <Route path="/oves">
+          <Oves />
         </Route>
 
         <Route path="/logIn">

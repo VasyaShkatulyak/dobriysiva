@@ -1,0 +1,136 @@
+.simpleCalculate {
+    height: 300px;
+    width: 400px;
+    background: #98d648;
+}
+
+.simpleCalculate:hover {
+    box-shadow: #91ff00 1px 0 60px;
+}
+
+.titleCalculate {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.nameArea {
+    display: inline-block;
+    width: 160px;
+    margin: 0px 0px 0px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+
+.inputArea {
+    margin: 0px 25px 0px 40px;
+    height: 25px;
+    width: 50px;
+    padding: 0px 0px 0px 15px;
+}
+
+.final {
+    margin: 40px 0px 0px 100px;
+    width: 100px;
+    background: #98d648;
+    font-size: 40px;
+    color: white;
+}
+
+.buttonCalculate {
+    margin: 50px 20px 0px 115px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buttonCalculate:hover {
+    background: #000;
+    color: white;
+    text-shadow: white 1px 0 10px;
+    box-shadow: black 1px 0 10px;
+}
+
+/* ------------------ProCalculate---------------- */
+
+.proCalculate {
+    height: 400px;
+    width: 400px;
+    background: rgb(49, 209, 201);
+}
+
+.proCalculate:hover {
+    box-shadow: rgb(5, 139, 180) 1px 0 50px;
+}
+
+.finalPro {
+    margin: 40px 0px 0px 70px;
+    width: 130px;
+    background: rgb(49, 209, 201);
+    font-size: 40px;
+    color: white;
+}
+
+.kg {
+    color: white;
+    font-size: 30px;
+}
+
+.inputPoints {
+    margin: 0px 0px 20px 0px;
+}
+
+.indexValue {
+    color: white;
+    font-size: 18px;
+}
+
+.indexKg {
+    color: white;
+    margin: 0px 0px 0px 20px;
+    font-size: 19px;
+}
+
+/* ------------------------------------------ */
+.posivnaPridatnist{
+    background: coral;
+    height: 250px;
+    width: 898px;
+    margin-top: 50px;
+}
+
+.buttonPosivna{
+    margin: 35px 0px 0px 70px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.buttonPosivna:hover {
+    background: #000;
+    color: white;
+    text-shadow: white 1px 0 10px;
+    box-shadow: black 1px 0 10px;
+}
+
+
+.posivnaResult{
+    margin: 0px 0px 0px 50px;
+    width: 130px;
+    background: coral;
+    font-size: 40px;
+    color: white;
+}
+.indexPosivna {
+    color: white;
+    margin: 0px 0px 0px 290px;
+    font-size: 19px;
+}
