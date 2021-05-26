@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
-
-const ProCalculate = () => {
+import React, { useState, useEffect } from 'react'
+const ProCalculate = ({posivnaResult}) => {
 
     const [chislovaNorma, setChislovaNorma] = useState();
     const [masa, setMasa] = useState();
     const [posivnaPrydatnist, setPosivnaPrydatnist] = useState();
-
 
     const [proEqual, setproEqual] = useState("");
 
@@ -24,6 +22,10 @@ const ProCalculate = () => {
     function proCalculate() {
         setproEqual((chislovaNorma * masa * 100) / posivnaPrydatnist);
     }
+
+    useEffect(() => {
+        setPosivnaPrydatnist(posivnaResult)
+    }, [posivnaResult])
 
     return (
         <>

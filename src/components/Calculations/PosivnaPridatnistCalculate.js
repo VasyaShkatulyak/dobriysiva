@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 
-const PosivnaPridatnistCalc = () => {
+const PosivnaPridatnistCalc = ({setPosivnaResult}) => {
+
+    const [result, setResult] = useState()
 
     const [shojist, setShojist] = useState();
     const [chistotaNasina, setChistotaNasina] = useState();
 
-    const [result, setResult] = useState("");
+    
 
     const enterShojist = (e) => {
         setShojist(e.target.value);
@@ -16,7 +18,9 @@ const PosivnaPridatnistCalc = () => {
     }
 
     const results = () => {
-        setResult((shojist * chistotaNasina) / 100);
+        const result = (shojist * chistotaNasina) / 100;
+        setResult(result);
+        setPosivnaResult(result);
     }
     return (
         <>
@@ -46,7 +50,7 @@ const PosivnaPridatnistCalc = () => {
                     value="Порахувати"
                 />
 
-                <span className="indexPosivna">Потрібно зерна</span>
+                <span className="indexPosivna">Посівна придатність</span>
                 <input className="posivnaResult" type="number" disabled value={Math.round(result * 100) / 100} />
                 <span className="kg">%</span>
             </div>

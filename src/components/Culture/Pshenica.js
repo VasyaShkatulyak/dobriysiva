@@ -1,10 +1,13 @@
-import React, { memo } from 'react'
+import React, { memo, useState } from 'react'
 import { Header } from '../Header/Header'
 import SimpleCalculate from '../Calculations/SimpleCalculate'
 import ProCalculate from '../Calculations/Calculate'
 import PosivnaPridatnistCalc from '../Calculations/PosivnaPridatnistCalculate'
 
 export default memo(function Home() {
+
+    const [posivnaResult, setPosivnaResult] = useState(0);
+
     return (
         <>
             <Header />
@@ -12,9 +15,9 @@ export default memo(function Home() {
                 <h1>Норма висіву пшениці</h1>
                 <div className="calculates">
                     <SimpleCalculate />
-                    <ProCalculate />
+                    <ProCalculate posivnaResult={posivnaResult}/>
                 </div>
-                <PosivnaPridatnistCalc />
+                <PosivnaPridatnistCalc setPosivnaResult={setPosivnaResult}/>
             </div>
         </>
     )
