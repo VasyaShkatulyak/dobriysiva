@@ -1,6 +1,6 @@
 .simpleCalculate {
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 898px;
     background: #98d648;
 }
 
@@ -22,34 +22,38 @@
     margin: 0px 0px 0px 20px;
     font-size: 17px;
     font-weight: 700;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .inputArea {
     margin: 0px 25px 0px 40px;
     height: 25px;
-    width: 50px;
-    padding: 0px 0px 0px 15px;
+    width: 55px;
+    padding: 0px 0px 0px 7px;
+    color: #84d618;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .final {
-    margin: 40px 0px 0px 100px;
+    margin: 0px 0px 0px 40px;
     width: 100px;
     background: #98d648;
     font-size: 40px;
     color: white;
 }
 
-.buttonCalculate {
-    margin: 50px 20px 0px 115px;
+.buttonSimpleCalculate {
+    margin: 25px 265px 0px 90px;
     display: block;
     width: 150px;
     height: 40px;
     font-size: 20px;
     font-weight: 600;
+    display: inline-block;
 }
 
-.buttonCalculate:hover {
+.buttonSimpleCalculate:hover {
     background: #000;
     color: white;
     text-shadow: white 1px 0 10px;
@@ -76,6 +80,32 @@
     color: white;
 }
 
+.inputAreaPro {
+    margin: 0px 25px 0px 40px;
+    height: 25px;
+    width: 70px;
+    padding: 0px 0px 0px 7px;
+    color: rgb(5, 139, 180);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.buttonCalculate {
+    margin: 50px 20px 0px 115px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buttonCalculate:hover {
+    background: #000;
+    color: white;
+    text-shadow: white 1px 0 10px;
+    box-shadow: black 1px 0 10px;
+}
+
 .kg {
     color: white;
     font-size: 30px;
@@ -99,19 +129,32 @@
 /* ------------------------------------------ */
 .posivnaPridatnist{
     background: coral;
-    height: 250px;
-    width: 898px;
-    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+.posivnaPridatnist:hover {
+    box-shadow: rgb(219, 79, 28) 1px 0 50px;
 }
 
 .buttonPosivna{
-    margin: 35px 0px 0px 70px;
+    margin: 45px 0px 0px 115px;
     display: block;
     width: 150px;
     height: 40px;
     font-size: 20px;
     font-weight: 600;
     display: inline-block;
+}
+
+.inputAreaPosivna {
+    margin: 0px 25px 0px 40px;
+    height: 25px;
+    width: 50px;
+    padding: 0px 0px 0px 7px;
+    color: coral;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .buttonPosivna:hover {
@@ -124,13 +167,14 @@
 
 .posivnaResult{
     margin: 0px 0px 0px 50px;
-    width: 130px;
+    width: 115px;
     background: coral;
     font-size: 40px;
     color: white;
 }
 .indexPosivna {
+    display: inline-block;
     color: white;
-    margin: 0px 0px 0px 290px;
+    margin: 80px 0px 0px 20px;
     font-size: 19px;
 }

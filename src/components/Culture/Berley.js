@@ -11,11 +11,11 @@ export default memo(function Home() {
             
             <div className="main">
             <h1>Норма висіву ячменю</h1>
-                <div className="calculates">
             <CalculateBerley />
+                <div className="calculates">
+            <PosivnaPridatnistCalc />
             <CalculateBarleyPro />
             </div>
-            <PosivnaPridatnistCalc />
             </div>
 
         </>

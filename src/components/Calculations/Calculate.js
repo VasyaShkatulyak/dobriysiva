@@ -35,7 +35,7 @@ const ProCalculate = ({posivnaResult}) => {
 
                 <div className="inputPoints">
                     <span className="nameArea">Числова норма</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPro"
                         type="number"
                         value={chislovaNorma}
                         onChange={enterChislovaNorma} />
@@ -44,7 +44,7 @@ const ProCalculate = ({posivnaResult}) => {
 
                 <div className="inputPoints">
                     <span className="nameArea">Маса 1000 насінин</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPro"
                         type="number"
                         value={masa}
                         onChange={enterMasa} />
@@ -53,7 +53,7 @@ const ProCalculate = ({posivnaResult}) => {
 
                 <div className="inputPoints">
                     <span className="nameArea">Посівна придатність</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPro"
                         type="number"
                         value={posivnaPrydatnist}
                         onChange={enterPosivnaPrydatnist} />
