@@ -1,7 +1,7 @@
 import React, { memo, useState, useReducer } from 'react'
 import { Header } from '../Header/Header'
 import SimpleCalculate from '../Calculations/SimpleCalculate'
-import ProCalculate from '../Calculations/Calculate'
+import ProCalculate from '../Calculations/ProCalculate'
 import PosivnaPridatnistCalc from '../Calculations/PosivnaPridatnistCalculate'
 import TabsBar from '../TabsBar/TabsBar'
 import CalculateBerley from '../Calculations/CalculateBarley'
@@ -22,8 +22,9 @@ export default memo(function Home() {
     const reducer = (state = initialState, action) => {
         switch (action.type) {
             case pshenica: return { cid: 1 };
-            case oves: return { cid: 2 };
-            case barley: return { cid: 3 };
+            case barley: return { cid: 2 };
+            case oves: return { cid: 3 };
+            default: throw new Error();
         }
     }
     const [state, dispatch] = useReducer(reducer, initialState);
@@ -33,7 +34,7 @@ console.log(state);
         <>
             <Header />
             <div className="main">
-                <h1>Норма висіву пшениці</h1>
+                <h1>Норма висіву зернових</h1>
                 <TabsBar dispatch={dispatch} />
                 {state.cid === 1 ? <SimpleCalculate /> : ""}
                 {state.cid === 2 ? <CalculateBerley /> : ""}

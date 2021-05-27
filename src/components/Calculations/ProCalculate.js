@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
-
-const CalculateOvesPro = () => {
+import React, { useState, useEffect } from 'react'
+const ProCalculate = ({ posivnaResult }) => {
 
     const [chislovaNorma, setChislovaNorma] = useState();
     const [masa, setMasa] = useState();
     const [posivnaPrydatnist, setPosivnaPrydatnist] = useState();
-
 
     const [proEqual, setproEqual] = useState("");
 
@@ -25,14 +23,19 @@ const CalculateOvesPro = () => {
         setproEqual((chislovaNorma * masa * 100) / posivnaPrydatnist);
     }
 
+    useEffect(() => {
+        setPosivnaPrydatnist(posivnaResult)
+    }, [posivnaResult])
+
     return (
         <>
+
             <div className="proCalculate">
                 <span className="titleCalculate">Розширений калькулятор</span>
 
                 <div className="inputPoints">
                     <span className="nameArea">Числова норма</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPro"
                         type="number"
                         value={chislovaNorma}
                         onChange={enterChislovaNorma} />
@@ -41,7 +44,7 @@ const CalculateOvesPro = () => {
 
                 <div className="inputPoints">
                     <span className="nameArea">Маса 1000 насінин</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPro"
                         type="number"
                         value={masa}
                         onChange={enterMasa} />
@@ -50,7 +53,7 @@ const CalculateOvesPro = () => {
 
                 <div className="inputPoints">
                     <span className="nameArea">Посівна придатність</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPro"
                         type="number"
                         value={posivnaPrydatnist}
                         onChange={enterPosivnaPrydatnist} />
@@ -70,4 +73,4 @@ const CalculateOvesPro = () => {
     )
 }
 
-export default CalculateOvesPro;
+export default ProCalculate;

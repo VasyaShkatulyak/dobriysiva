@@ -1,7 +1,7 @@
 import Home from "./components/Home/Home";
-import ProPages from './components/Culture/Berley'
+import Corn from './components/Culture/Corn'
 import Login from './components/Login/Login'
-import Pshenica from "./components/Culture/Pshenica";
+import Zernovi from "./components/Culture/Zernovi";
 import Oves from "./components/Culture/Oves";
 
 import {
@@ -21,12 +21,12 @@ function App() {
           <Home />
         </Route>
 
-        <Route path="/pshenica">
-          <Pshenica />
+        <Route path="/zernovi">
+          <Zernovi />
         </Route>
 
-        <Route path="/berley">
-          <ProPages />
+        <Route path="/corn">
+          <Corn />
         </Route>
 
         <Route path="/oves">
