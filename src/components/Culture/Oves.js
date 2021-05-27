@@ -11,11 +11,12 @@ export default memo(function Home() {
 
             <div className="main">
                 <h1>Норма висіву вівса</h1>
+                <CalculateOves />
                 <div className="calculates">
-                    <CalculateOves />
+                    <PosivnaPridatnistCalc />
                     <CalculateOvesPro />
                 </div>
-                <PosivnaPridatnistCalc />
+                
             </div>
 
         </>

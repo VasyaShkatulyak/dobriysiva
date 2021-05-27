@@ -14,11 +14,10 @@ const SimpleCalculate = () => {
         setEqual(Number(area) * 250);
     }
 
-
     return(
         <>
         <div className="simpleCalculate">
-                    <span className="titleCalculate">Простий калькулятор</span>
+                    <span className="titleCalculate">Звичайний калькулятор</span>
                     <div className="inputPoints">
                         <span className="nameArea">Площа</span>
                         <input className="inputArea" type="number" min="0" value={area} onChange={enterArea} />
@@ -26,7 +25,7 @@ const SimpleCalculate = () => {
                     </div>
                     <input
                         type="submit"
-                        className="buttonCalculate"
+                        className="buttonSimpleCalculate"
                         onClick={cultureCalculate}
                         value="Порахувати"
                     />

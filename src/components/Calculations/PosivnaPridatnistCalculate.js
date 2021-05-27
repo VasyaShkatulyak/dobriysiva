@@ -28,7 +28,7 @@ const PosivnaPridatnistCalc = ({setPosivnaResult}) => {
             <span className="titleCalculate">Посівна придатність</span>
                 <div className="inputPoints">
                     <span className="nameArea">Схожість насіння</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPosivna"
                         type="number"
                         value={shojist}
                         onChange={enterShojist} />
@@ -37,7 +37,7 @@ const PosivnaPridatnistCalc = ({setPosivnaResult}) => {
 
                 <div className="inputPoints">
                     <span className="nameArea">Чистота насіння</span>
-                    <input className="inputArea"
+                    <input className="inputAreaPosivna"
                         type="number"
                         value={chistotaNasina}
                         onChange={enterChistotaNasina} />
