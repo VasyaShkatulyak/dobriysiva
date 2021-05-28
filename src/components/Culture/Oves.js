@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import CalculateBeet from '../Calculations/CalculationBeet'
 import { Header } from '../Header/Header'
 
 export default memo(function Home() {
@@ -8,7 +9,7 @@ export default memo(function Home() {
 
             <div className="main">
                 <h1>Норма висіву буряка</h1>
-                               
+                   <CalculateBeet />            
             </div>
 
         </>

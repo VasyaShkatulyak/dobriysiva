@@ -29,7 +29,6 @@ export default memo(function Home() {
     }
     const [state, dispatch] = useReducer(reducer, initialState);
 
-console.log(state);
     return (
         <>
             <Header />
