@@ -4,7 +4,7 @@ import Login from './components/Login/Login'
 import Zernovi from "./components/Culture/Zernovi";
 import Oves from "./components/Culture/Oves";
 import { useState, useEffect } from 'react';
-import fire from '../server/firebase.config'
+import {auth} from './server/firebase.config'
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,50 +13,23 @@ import {
 
 
 function App() {
+
   const [user, setUser] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [pasword, setPasword] = useState(null);
-  const [EError, setEError] = useState(null);
-  const [hasAccaunt, setHasAccaunt] = useState(false);
-
-
-  const cleanInput = () => {
-    setEmail('')
-    setPasword('')
-  }
-
-  const cleanError = () => {
-    setEError('')
-  }
-
-  const login = () => {
-    cleanError()
-    fire
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .catch((error) => {
-        setEErrorZ(error.message)
-      })
-
-  }
-
-  const logout = () => {
-    fire.auth().signout()
-  }
-
-  const authLisener = () => {
-    fire.auth().onAuthStateChanged(userAuth => {
-      if (userAuth) {
-        setUser(userAuth)
-        cleanInput()
-      } else {
-        setUser('')
-      }
-    });
-  }
 
   useEffect(() => {
-    authLisener()
+    const unsubscribe = auth?.onAuthStateChanged(userAuth => {
+      const user = {
+        uid: userAuth?.uid,
+        email: userAuth?.email
+      }
+      if (userAuth) {
+        console.log(userAuth)
+        setUser(user)
+      } else {
+        setUser(null)
+      }
+    })
+    return unsubscribe
   }, [])
 
   return (
@@ -81,17 +54,12 @@ function App() {
         </Route>
 
         <Route path="/logIn">
-          <Login
-            login={login}
-            setEError={setEError}
-            setEmail={setEmail}
-            error={EError}
-            email={email}
-            password={password}
-            hasAccaunt={hasAccaunt}
-            setHasAccaunt={setHasAccaunt}
-          />
+          <Login />
         </Route>
+
+        {user?<p><button onClick={() => auth.signOut()}>Sign out</button></p>:<Route path="/logIn">
+          <Login />
+        </Route>}
 
         {/* <Route path="/*">
           <ErrorPage />

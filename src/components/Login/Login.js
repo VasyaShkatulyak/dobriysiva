@@ -1,38 +1,60 @@
-import React, { useEffect, useState, memo } from 'react'
-import { Header } from '../Header/Header'
+import React, { useState } from 'react'
+import { auth } from '../../server/firebase.config'
+import {Header} from '../Header/Header'
+import './Login.css'
 
-export default memo(function Login({ login, setEError, setEmail, error, email, password, hasAccaunt, setHasAccaunt }) {
+const Login = () => {
+  const [password,setPassowrd]=useState('')
+  const [email,setEmail]=useState('')
+  const [error,setError]=useState(null)
+  const [isReg,setIsReg]=useState(false)
 
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+  const goToReg = 'Ще не зареєстровані? до реєстрації-> '
+  const goToLogin = 'Є аккаунт? ротрібно ввійти в систему-> '
 
-    const [isValid, setIsValid] = useState(false)
-
-    const formSubmition = () => {
-        if (email === '' || password === '') {
-            alert("Логін або пароль неправильний")
+  const login = ()=>{
+    auth.signInWithEmailAndPassword(email,password)
+    .then((user)=>{
+        if(user){
+            window.location.href="/"
         }
-        else {
-            setIsValid(true)
-        }
-    }
+    })
+    .catch((e)=>{
+        setError(e.message)
+    })
+}
 
+const register = ()=>{
+    auth.createUserWithEmailAndPassword(email,password)
+    .then((user)=>{
+        console.log(user);
+    })
+    .catch((e)=>{
+        setError(e.message)
+    })
+}
 
-
-    return (
-        <>
-            <Header />
-
-            <div className="login">
-                <span>Логування</span>
-
-                <input  placeholder="Введіть пошту" value={email} onChange={(e)=>setEmail(e.current.value)}></input>
-                <input  placeholder="Введіть пароль" value={password} onChange={(e)=>setPassword(e.current.value)}></input>
-                <div>{error}</div>
-
-                <button className="LoginButton" onClick={() => formSubmition()}>Увійти</button>
+return (
+    <div className="signin">
+         <Header />
+        <div style={{display:'flex', flexDirection:'column', maxWidth:300}} >
+            {isReg?<h1>Реєстрація</h1>:<h1>Логін</h1>}
+            <input style={{background: "green"}} value={email} onChange={(e)=>setEmail(e.target.value)} type="email" />
+            <input style={{background: "grey"}} value={password}  onChange={(e)=>setPassowrd(e.target.value)} type="password" />
+           <div>{error}</div>
+           {isReg
+                ? <button onClick={register}>реєстрація</button>
+                : <button onClick={login}>вхід</button>
+                }
+            <h6>
+                    {isReg
+                    ?goToReg
+                    :goToLogin
+                    }
+                    <button onClick={()=>setIsReg(!isReg)}>перейти</button></h6>
             </div>
-
-        </>
+        </div>
     )
-})
+}
+
+export default Login;

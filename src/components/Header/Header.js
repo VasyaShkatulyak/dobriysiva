@@ -12,7 +12,6 @@ export const Header = () => {
             <Link className="headerItem" to="/oves">Буряк</Link>
             <Link className="headerItem" to="/logIn">Log in</Link>
 
-
         </header>
     )
 }
