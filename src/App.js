@@ -1,9 +1,10 @@
 import Home from "./components/Home/Home";
-import ProPages from './components/Culture/Berley'
+import Corn from './components/Culture/Corn'
 import Login from './components/Login/Login'
-import Pshenica from "./components/Culture/Pshenica";
+import Zernovi from "./components/Culture/Zernovi";
 import Oves from "./components/Culture/Oves";
-
+import { useState, useEffect } from 'react';
+import {auth} from './server/firebase.config'
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,6 +13,25 @@ import {
 
 
 function App() {
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth?.onAuthStateChanged(userAuth => {
+      const user = {
+        uid: userAuth?.uid,
+        email: userAuth?.email
+      }
+      if (userAuth) {
+        console.log(userAuth)
+        setUser(user)
+      } else {
+        setUser(null)
+      }
+    })
+    return unsubscribe
+  }, [])
+
   return (
 
     <Router>
@@ -21,12 +41,12 @@ function App() {
           <Home />
         </Route>
 
-        <Route path="/pshenica">
-          <Pshenica />
+        <Route path="/zernovi">
+          <Zernovi />
         </Route>
 
-        <Route path="/berley">
-          <ProPages />
+        <Route path="/corn">
+          <Corn />
         </Route>
 
         <Route path="/oves">
@@ -36,6 +56,14 @@ function App() {
         <Route path="/logIn">
           <Login />
         </Route>
+
+        {user?<p><button onClick={() => auth.signOut()}>Sign out</button></p>:<Route path="/logIn">
+          <Login />
+        </Route>}
+
+        {/* <Route path="/*">
+          <ErrorPage />
+        </Route> */}
 
       </Switch>
 

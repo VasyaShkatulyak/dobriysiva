@@ -7,11 +7,10 @@ export const Header = () => {
     return (
         <header>
             <Link to="/">Dobriy Siva</Link>
-            <Link className="headerItem" to="/pshenica">Пшениця</Link>
-            <Link className="headerItem" to="/berley">Ячмінь</Link>
-            <Link className="headerItem" to="/oves">Овес</Link>
+            <Link className="headerItem" to="/zernovi">Зернові культури</Link>
+            <Link className="headerItem" to="/corn">Кукурудза</Link>
+            <Link className="headerItem" to="/oves">Буряк</Link>
             <Link className="headerItem" to="/logIn">Log in</Link>
-
 
         </header>
     )

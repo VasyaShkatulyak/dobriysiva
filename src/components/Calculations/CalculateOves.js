@@ -17,21 +17,22 @@ const CalculateOves = () => {
     return(
         <>
         <div className="simpleCalculate">
-                    <span className="titleCalculate">Простий калькулятор</span>
+                    <span className="titleSimpleCalculate">Звичайний калькулятор</span>
+                    <span className="titleCulture">Вівса</span>
                     <div className="inputPoints">
-                        <span className="nameArea">Площа</span>
+                        <span className="nameSimpleArea">Площа</span>
                         <input className="inputArea" type="number" min="0" value={area} onChange={enterArea} />
                         <span className="indexValue">га</span>
                     </div>
                     <input
                         type="submit"
-                        className="buttonCalculate"
+                        className="buttonSimpleCalculate"
                         onClick={cultureCalculate}
                         value="Порахувати"
                     />
                     <span className="indexKg">Потрібно зерна</span>
                     <input className="final" type="number" disabled value={equal} />
-                    <span className="kg">кг</span>
+                    <span className="kg">кг/га</span>
                 </div>
                 
         </>

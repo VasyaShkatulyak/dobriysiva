@@ -1,5 +1,7 @@
 import React from 'react'
-import { barley, oves, pshenica } from '../Culture/Pshenica'
+import { barley, oves, pshenica } from '../Culture/Zernovi'
+import '../style.css'
+import './tabs.css'
 
 export default function TabsBar({dispatch}) {
 
@@ -17,10 +19,11 @@ export default function TabsBar({dispatch}) {
 
     return (
         <>
-        <div>
-            <button onClick={ChangePshenica}>Пшениця</button>
-            <button onClick={ChangeOves}>Овес</button>
-            <button onClick={ChangeBarley}>Ячмінь</button>
+        <div className="bar">
+            <button className="tab_button" onClick={ChangePshenica}>Пшениця</button>
+            <button className="tab_button" onClick={ChangeBarley}>Ячмінь</button>
+            <button className="tab_button" onClick={ChangeOves}>Овес</button>
+
         </div>
         </>
     )
