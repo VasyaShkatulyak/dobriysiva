@@ -8,8 +8,11 @@ export default memo(function Home() {
         <>
             <Header />
 
-            <h1>Виберіть культуру для обчислення</h1>
+            
+            <div classname="main1">
+            <h1 className="h1">Виберіть культуру для обчислення</h1>
             <ZernoviCard/>
+            </div>
         </>
     )
 })

@@ -11,7 +11,7 @@ const SimpleCalculate = () => {
     }
 
     function cultureCalculate() {
-        setEqual(Number(area) * 250);
+        setEqual(Number(area) * 249);
     }
 
     return (
