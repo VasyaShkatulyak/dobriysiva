@@ -3,6 +3,7 @@ import Corn from './components/Culture/Corn'
 import Login from './components/Login/Login'
 import Zernovi from "./components/Culture/Zernovi";
 import Oves from "./components/Culture/Oves";
+import ErrorPage from "./components/Culture/ErrorPage";
 import { useState, useEffect } from 'react';
 import {auth} from './server/firebase.config'
 import {
@@ -61,9 +62,9 @@ function App() {
           <Login />
         </Route>}
 
-        {/* <Route path="/*">
+        <Route path="/*">
           <ErrorPage />
-        </Route> */}
+        </Route>
 
       </Switch>
 

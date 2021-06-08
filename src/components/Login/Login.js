@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { auth } from '../../server/firebase.config'
 import {Header} from '../Header/Header'
@@ -48,8 +49,8 @@ return (
                 }
             <h6>
                     {isReg
-                    ?goToReg
-                    :goToLogin
+                    ?goToLogin
+                    :goToReg
                     }
                     <button onClick={()=>setIsReg(!isReg)}>перейти</button></h6>
             </div>

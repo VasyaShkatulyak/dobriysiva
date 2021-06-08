@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
     return (
         <header>
-            <Link to="/">Dobriy Siva</Link>
+            <Link  to="/">Dobriy Siva</Link>
             <Link className="headerItem" to="/zernovi">Зернові культури</Link>
             <Link className="headerItem" to="/corn">Кукурудза</Link>
             <Link className="headerItem" to="/oves">Буряк</Link>

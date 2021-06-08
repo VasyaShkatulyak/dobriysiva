@@ -81,7 +81,7 @@ const CalculateBeet = () => {
                 <span className="kg">шт/га</span>
 
                 <span className="indexKg">Норма висіву на {constArea} га</span>
-                <input className="finalPro" type="number" disabled value={Math.round(normaGectar * 10) / 10} />
+                <input className="finalPro" type="number" disabled value={Math.round(areaNorma * 10) / 10} />
                 <span className="kg">шт/га</span>
 
             </div>
