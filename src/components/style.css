@@ -75,8 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 /* <-------------------------------------------> */
 
 body {
-  /* background: url('../img/B.jpg') fixed; */
-  background: white;
+  background: url('../img/B.jpg') fixed;
+  /* background: white; */
 }
 
 a {
@@ -88,7 +88,7 @@ a {
 h1 {
   font-size: 60px;
   text-align: center;
-  color: #6fbe08;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -103,7 +103,7 @@ h1 {
   height: auto;
   margin: 0 auto;
   padding: 1px 100px 100px 100px;
-  background-color: rgb(228, 225, 225);
+  background-color: rgba(121, 109, 109, 0.8);
 }
 
 .login{
