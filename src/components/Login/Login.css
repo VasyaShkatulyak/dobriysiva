@@ -1,3 +1,44 @@
-/* body{
-    background: grey;
-} */
+.loginForm{
+    width: 340px;
+    height: 400px;
+    background: rgb(135,156,175, 0.9);
+    margin: 0 auto;
+}
+.LoginH1{
+    margin: 100px 0px 0px 0px;
+    padding: 20px 0px 60px 0px;
+}
+.inputLogin{
+    width: 250px;
+    height: 30px;
+    margin: 0px 0px 20px 45px;
+    font-size: 25px;
+    color: rgb(54, 72, 61);
+}
+.btnLogin{
+    margin: 20px 0px 30px 120px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+.titleQuestion{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.btrSwap{
+    margin: 10px 0px 30px 0px;
+    width: 90px;
+    height: 30px;
+    font-size: 19px;
+}
+.btnLogin:hover{
+    color: rgb(135,156,175);
+    font-weight: 700;
+    box-shadow: rgb(255, 255, 255) 1px 0 30px;
+}
+.btrSwap:hover{
+    color: rgb(135,156,175);
+    font-weight: 700;
+    box-shadow: rgb(255, 255, 255) 1px 0 30px;
+}

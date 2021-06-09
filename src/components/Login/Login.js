@@ -38,21 +38,21 @@ const register = ()=>{
 return (
     <div className="signin">
          <Header />
-        <div style={{display:'flex', flexDirection:'column', maxWidth:300}} >
-            {isReg?<h1>Реєстрація</h1>:<h1>Логін</h1>}
-            <input style={{background: "green"}} value={email} onChange={(e)=>setEmail(e.target.value)} type="email" />
-            <input style={{background: "grey"}} value={password}  onChange={(e)=>setPassowrd(e.target.value)} type="password" />
+        <div className="loginForm">
+            {isReg?<h1 className="LoginH1">Реєстрація</h1>:<h1 className="LoginH1">Логін</h1>}
+            <input className="inputLogin" value={email} onChange={(e)=>setEmail(e.target.value)} type="email" />
+            <input className="inputLogin" value={password}  onChange={(e)=>setPassowrd(e.target.value)} type="password" />
            <div>{error}</div>
            {isReg
-                ? <button onClick={register}>реєстрація</button>
-                : <button onClick={login}>вхід</button>
+                ? <button className="btnLogin" onClick={register}>Реєстрація</button>
+                : <button className="btnLogin" onClick={login}>Вхід</button>
                 }
-            <h6>
+            <h6 className="titleQuestion">
                     {isReg
                     ?goToLogin
                     :goToReg
                     }
-                    <button onClick={()=>setIsReg(!isReg)}>перейти</button></h6>
+                    <button className="btrSwap" onClick={()=>setIsReg(!isReg)}>Перейти</button></h6>
             </div>
         </div>
     )
