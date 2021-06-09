@@ -17,6 +17,6 @@ header {
 .headerItem:hover{
     background: rgb(49, 49, 49, .7);
     height: 100%;
-    padding: 25px 0px 0px 0px;
+    padding: 23px 0px 0px 0px;
     text-shadow: white 1px 0 10px;
 }
