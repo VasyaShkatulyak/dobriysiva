@@ -51,6 +51,7 @@ const CalculateCorn = ({ posivnaResult }) => {
                     <span className="nameArea">Густота стояння</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
                         value={hustota}
                         onChange={enterHustota} />
                     <span className="indexValue">тис. шт./га</span>
@@ -60,6 +61,8 @@ const CalculateCorn = ({ posivnaResult }) => {
                     <span className="nameArea">Посівна придатність</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
+                        max="100"
                         value={posivnaPrydatnist}
                         onChange={enterPosivnaPrydatnist} />
                     <span className="indexValue">%</span>
@@ -69,6 +72,7 @@ const CalculateCorn = ({ posivnaResult }) => {
                     <span className="nameArea">Ширина міжряддя</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
                         value={shirinaMijriadya}
                         onChange={enterShirinaMijriadya} />
                     <span className="indexValue">см</span>

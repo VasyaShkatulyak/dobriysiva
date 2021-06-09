@@ -1,4 +1,29 @@
+.error{
+    background: url('../../img//1.jpg') 0 0/100% no-repeat fixed;
+    height: 990px;
+    width: 100%;
+}
+.ErrorH1{
+    margin-top: -10px;
+    padding: 120px 0px 0px 0px;
+    font-size: 150px;
+    color: red;
+}
 .errorToHome{
     font-size: 60px;
     color: red;
+    margin: 0px 0px 0px 720px;
+    background: rgb(107, 107, 107, .9);
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+}
+.description{
+    /* margin-top: -10px; */
+    padding: 0px 0px 0px 0px;
+    font-size: 100px;
+    color: red;
+    margin: 0px 0px 50px 550px;
+}
+.errorToHome:hover{
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }

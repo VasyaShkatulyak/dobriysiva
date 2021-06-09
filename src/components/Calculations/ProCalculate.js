@@ -37,6 +37,7 @@ const ProCalculate = ({ posivnaResult }) => {
                     <span className="nameArea">Числова норма</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
                         value={chislovaNorma}
                         onChange={enterChislovaNorma} />
                     <span className="indexValue">млн шт./га</span>
@@ -46,6 +47,7 @@ const ProCalculate = ({ posivnaResult }) => {
                     <span className="nameArea">Маса 1000 насінин</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
                         value={masa}
                         onChange={enterMasa} />
                     <span className="indexValue">г</span>
@@ -55,6 +57,8 @@ const ProCalculate = ({ posivnaResult }) => {
                     <span className="nameArea">Посівна придатність</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
+                        max="100"
                         value={posivnaPrydatnist}
                         onChange={enterPosivnaPrydatnist} />
                     <span className="indexValue">%</span>

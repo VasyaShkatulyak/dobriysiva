@@ -7,8 +7,11 @@ const ErrorPage = () => {
 
     return(
         <>
-        <h1>ERROR</h1>
+        <div className="error">
+        <h1 className="ErrorH1">404</h1>
+        <h2 className="description">Page not found</h2>
         <Link className="errorToHome" to="/">На головну</Link>
+        </div>
         </>
     )
 }

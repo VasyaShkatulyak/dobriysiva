@@ -8,8 +8,15 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-left: 50px;
+    border-bottom: 4px solid rgb(41, 41, 41);
 }
 
 .headerItem {
     font-size: 40px;
+}
+.headerItem:hover{
+    background: rgb(49, 49, 49, .7);
+    height: 100%;
+    padding: 25px 0px 0px 0px;
+    text-shadow: white 1px 0 10px;
 }

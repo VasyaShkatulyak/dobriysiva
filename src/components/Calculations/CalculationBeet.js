@@ -43,6 +43,7 @@ const CalculateBeet = () => {
                     <span className="nameBeet">Запланована кількість сходів</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
                         value={countShodiv}
                         onChange={enterCountShodiv} />
                     <span className="indexValue">шт/м</span>
@@ -52,6 +53,8 @@ const CalculateBeet = () => {
                     <span className="nameBeet">Польова схожість насіння</span>
                     <input className="inputAreaPro"
                         type="number"
+                        min="0"
+                        max="100"
                         value={areaShojist}
                         onChange={enterAreaShojist} />
                     <span className="indexValue">%</span>
