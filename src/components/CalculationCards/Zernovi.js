@@ -11,6 +11,8 @@ const ZernoviCard = () => {
 
 	return (
 		<>
+		<div className="home_main">
+		<h1 className="h1">Виберіть культуру для обчислення</h1>
 			<div class="container">
 				<div className="card">
 					<img className="img" src={Pshenica} alt="afsdga"/>
@@ -27,6 +29,7 @@ const ZernoviCard = () => {
 				<span className="card_title2">КУКУРУДЗА</span>
 				<div id="btn"><Link class="noselect" to='/corn'>Обчислити</Link></div>
 				</div>
+			</div>
 			</div>
 		</>
 	)

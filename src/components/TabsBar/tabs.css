@@ -17,6 +17,7 @@
     font-weight: 700;
 }
 .tab_button:hover{
-    border-bottom: 4px solid #6fbe08;
-    box-shadow: #91ff00 1px 12px 30px;
+    border-bottom: 4px solid #ffc400;
+    box-shadow: #ffc400 1px 12px 40px;
+    color: #fdcd2d;
 }

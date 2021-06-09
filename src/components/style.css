@@ -72,18 +72,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* <-------------------------------------------> */
+
 /* <-------------------------------------------> */
 
 body {
   background: url('../img/B.jpg') fixed;
-  /* background: white; */
 }
 
 a {
   color: white;
   margin-right: 70px;
 }
-
 
 h1 {
   font-size: 60px;
@@ -93,7 +92,7 @@ h1 {
   margin: 30px 0px 80px 0px;
 }
 
-.calculates{
+.calculates {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -104,17 +103,24 @@ h1 {
   height: auto;
   margin: 0 auto;
   padding: 1px 100px 100px 100px;
-  background-color: rgba(121, 109, 109, 0.8);
+  background-color: rgba(54,72,61, 0.7);
 }
 
-.login{
+.home_main {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255);
+}
+
+.login {
   margin: 0 auto;
   height: 500px;
   width: 400px;
   background: rgb(201, 193, 193);
 }
 
-.data{
+.data {
   display: block;
   height: 30px;
   width: 350px;
@@ -123,7 +129,7 @@ h1 {
   font-size: 18px;
 }
 
-.LoginButton{
+.LoginButton {
   height: 50px;
   width: 200px;
   background: rgb(31, 233, 31);

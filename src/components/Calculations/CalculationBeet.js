@@ -36,11 +36,11 @@ const CalculateBeet = () => {
 
     return (
         <>
-            <div className="cornCalculate">
-                <span className="titleCalculate">Калькулятор буряка</span>
+            <div className="beetCalculate">
+                <span className="titleBeet">Калькулятор буряка</span>
 
                 <div className="inputPoints">
-                    <span className="nameArea">Запланована кількість сходів</span>
+                    <span className="nameBeet">Запланована кількість сходів</span>
                     <input className="inputAreaPro"
                         type="number"
                         value={countShodiv}
@@ -49,7 +49,7 @@ const CalculateBeet = () => {
                 </div>
 
                 <div className="inputPoints">
-                    <span className="nameArea">Польова схожість насіння</span>
+                    <span className="nameBeet">Польова схожість насіння</span>
                     <input className="inputAreaPro"
                         type="number"
                         value={areaShojist}
@@ -58,7 +58,7 @@ const CalculateBeet = () => {
                 </div>
 
                 <div className="inputPoints">
-                    <span className="nameArea">Площа під посів</span>
+                    <span className="nameBeet">Площа під посів</span>
                     <input className="inputAreaPro"
                         type="number"
                         value={constArea}
@@ -68,20 +68,20 @@ const CalculateBeet = () => {
 
                 <input
                     type="submit"
-                    className="buttonCalculate"
+                    className="buttonCalculateBeet"
                     onClick={beetCalculation}
                     value="Порахувати"
                 />
-                <span className="indexKg">Норма висіву</span>
-                <input className="finalPro" type="number" disabled value={Math.round(normaBeet * 10) / 10} />
+                <span className="indexBeet">Норма висіву</span>
+                <input className="finalBeet" type="number" disabled value={Math.round(normaBeet * 10) / 10} />
                 <span className="kg">шт/м</span>
 
-                <span className="indexKg">Норма висіву на гектар</span>
-                <input className="finalPro" type="number" disabled value={Math.round(normaGectar * 10) / 10} />
+                <span className="indexBeet">Норма висіву на гектар</span>
+                <input className="finalBeet" type="number" disabled value={Math.round(normaGectar * 10) / 10} />
                 <span className="kg">шт/га</span>
 
-                <span className="indexKg">Норма висіву на {constArea} га</span>
-                <input className="finalPro" type="number" disabled value={Math.round(areaNorma * 10) / 10} />
+                <span className="indexBeet">Норма висіву на {constArea} га</span>
+                <input className="finalBeet" type="number" disabled value={Math.round(areaNorma * 10) / 10} />
                 <span className="kg">шт/га</span>
 
             </div>

@@ -3,8 +3,8 @@
     padding-top: 15px;
     height: 350px;
     width: 400px;
-    background: #8d9188;
-    opacity: 0.6;    
+    background: #E79902;
+    opacity: 0.6;
 }
 
 .simpleCalculate:hover {
@@ -18,14 +18,14 @@
     margin: 10px 0px 10px 0px;
     text-align: center;
     display: block;
-    color: white;
+    color: rgb(54, 72, 61);
     font-size: 30px;
 }
 
-.titleCulture{
+.titleCulture {
     text-align: center;
     display: block;
-    color: white;
+    color: rgb(54, 72, 61);
     font-size: 30px;
     margin: 0px 0px 30px 0px;
 }
@@ -36,7 +36,7 @@
     margin: 20px 0px 0px 20px;
     font-size: 17px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(54, 72, 61);
 }
 
 .inputArea {
@@ -44,7 +44,7 @@
     height: 25px;
     width: 55px;
     padding: 0px 0px 0px 7px;
-    color: #8d9188;
+    color: rgb(54, 72, 61);
     font-size: 20px;
     font-weight: 700;
 }
@@ -52,9 +52,9 @@
 .final {
     margin: 0px 0px 0px 60px;
     width: 100px;
-    background: #8d9188;
+    background: #E79902;
     font-size: 40px;
-    color: white;
+    color: rgb(54, 72, 61);
 }
 
 .buttonSimpleCalculate {
@@ -68,8 +68,8 @@
 }
 
 .buttonSimpleCalculate:hover {
-    background: rgb(36, 35, 35);
-    color: white;
+    background: rgb(255, 255, 255);
+    color: #E79902;
     text-shadow: white 1px 0 15px;
     box-shadow: rgb(255, 255, 255) 1px 0 40px;
 }
@@ -79,12 +79,12 @@
 .proCalculate {
     height: 400px;
     width: 400px;
-    background: rgb(45, 167, 160);
-    opacity: 0.6;
+    background: rgb(232, 223, 121);
+    opacity: 0.8;
 }
 
 .proCalculate:hover {
-    box-shadow: rgb(6, 213, 228) 1px 0 80px;
+    box-shadow: rgb(255, 245, 135) 1px 0 80px;
     border: 2px solid #ffffff;
     opacity: 1;
     transition: 1s;
@@ -94,23 +94,25 @@
     margin: 40px 0px 30px 0px;
     text-align: center;
     display: block;
-    color: white;
+    color: rgb(54, 72, 61);
     font-size: 30px;
 }
+
 .nameArea {
     display: inline-block;
     width: 160px;
     margin: 0px 0px 0px 20px;
     font-size: 17px;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: rgb(54, 72, 61);
 }
+
 .finalPro {
     margin: 40px 0px 0px 70px;
     width: 130px;
-    background: rgb(45, 167, 160);
+    background: rgb(232, 223, 121);
     font-size: 40px;
-    color: white;
+    color: rgb(54, 72, 61);
 }
 
 .inputAreaPro {
@@ -118,9 +120,10 @@
     height: 25px;
     width: 70px;
     padding: 0px 0px 0px 7px;
-    color: rgb(5, 139, 180);
+    color: rgb(54, 72, 61);
     font-size: 20px;
     font-weight: 700;
+    align-items: center;
 }
 
 .buttonCalculate {
@@ -134,13 +137,13 @@
 
 .buttonCalculate:hover {
     background: rgb(255, 255, 255);
-    color: rgb(23, 177, 169);
+    color: rgb(192, 179, 40);
     text-shadow: white 1px 0 10px;
     box-shadow: rgb(255, 255, 255) 1px 0 30px;
 }
 
 .kg {
-    color: white;
+    color: rgb(54, 72, 61);
     font-size: 30px;
 }
 
@@ -149,32 +152,33 @@
 }
 
 .indexValue {
-    color: white;
+    color: rgb(54, 72, 61);
     font-size: 18px;
 }
 
 .indexKg {
-    color: white;
+    color: rgb(54, 72, 61);
     margin: 0px 0px 0px 30px;
     font-size: 19px;
 }
 
 /* ------------------------------------------ */
-.posivnaPridatnist{
-    background: rgb(160, 122, 165);
+
+.posivnaPridatnist {
+    background: rgb(224, 192, 68);
     height: 400px;
     width: 400px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .posivnaPridatnist:hover {
-    box-shadow: rgb(218, 29, 243) 1px 0 80px;
+    box-shadow: rgb(253, 220, 87) 1px 0 80px;
     border: 2px solid #ffffff;
     opacity: 1;
     transition: 1s;
 }
 
-.buttonPosivna{
+.buttonPosivna {
     margin: 45px 0px 0px 115px;
     display: block;
     width: 150px;
@@ -189,45 +193,163 @@
     height: 25px;
     width: 50px;
     padding: 0px 0px 0px 7px;
-    color: rgb(186, 23, 207);
+    color: rgb(54, 72, 61);
     font-size: 20px;
     font-weight: 700;
 }
 
 .buttonPosivna:hover {
     background: rgb(255, 255, 255);
-    color: rgb(166, 6, 187);
+    color: rgb(201, 167, 34);
     text-shadow: white 1px 0 10px;
     box-shadow: rgb(255, 255, 255) 1px 0 20px;
 }
 
-
-.posivnaResult{
+.posivnaResult {
     margin: 0px 0px 0px 50px;
     width: 115px;
-    background: rgb(160, 122, 165);
+    background: rgb(224, 192, 68);
     font-size: 40px;
-    color: white;
+    color: rgb(54, 72, 61);
 }
+
 .indexPosivna {
     display: inline-block;
-    color: white;
+    color: rgb(54, 72, 61);
     margin: 80px 0px 0px 20px;
     font-size: 19px;
 }
 
 /* --------------------------------------------- */
+
 /* corn calculate */
 
-.cornCalculate{
-    height: 800px;
+.cornCalculate {
+    height: 600px;
     width: 450px;
-    background: rgb(45, 167, 160);
+    background: rgb(232, 223, 121);
     opacity: 0.6;
 }
-.cornCalculate:hover{
-    box-shadow: rgb(6, 213, 228) 1px 0 80px;
+
+.cornCalculate:hover {
+    box-shadow: rgb(255, 243, 109) 1px 0 80px;
     border: 2px solid #ffffff;
     opacity: 1;
     transition: 1s;
+}
+
+.buttonCalculateCorn {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+
+.buttonCalculateCorn:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(201, 167, 34);
+    text-shadow: white 1px 0 10px;
+    box-shadow: rgb(255, 255, 255) 1px 0 40px;
+}
+
+.indexCorn {
+    margin: 0px 20px 0px 20px;
+    color: rgb(54, 72, 61);
+    font-size: 19px;
+    display: inline-block;
+    width: 150px;
+}
+
+.finalCorn {
+    margin: 10px 10px 0px 0px;
+    width: 120px;
+    background: rgb(232, 223, 121);
+    font-size: 40px;
+    color: rgb(54, 72, 61);
+    text-align: center;
+}
+.kgCorn{
+    color: rgb(54, 72, 61);
+    font-size: 25px;
+    display: inline-block;
+}
+.indexCornNorma{
+    margin: 0px 20px 0px 20px;
+    color: rgb(54, 72, 61);
+    font-size: 19px;
+    display: inline-block;
+    width: 150px;
+}
+.kgCorn1{
+    color: rgb(54, 72, 61);
+    font-size: 25px;
+    display: inline-block;
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+.beetCalculate{
+    height: 550px;
+    width: 550px;
+    background: rgb(232, 223, 121);
+    opacity: 0.6;
+    margin: 0 auto  ;
+}
+
+.beetCalculate:hover{
+    box-shadow: rgb(255, 243, 109) 1px 0 80px;
+    border: 2px solid #ffffff;
+    opacity: 1;
+    transition: 1s;
+}
+.titleBeet{
+    padding: 35px 0px 50px 0px;
+    text-align: center;
+    display: block;
+    color: rgb(54, 72, 61);
+    font-size: 30px;
+}
+.nameBeet{
+    display: inline-block;
+    width: 260px;
+    margin: 0px 0px 0px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(54, 72, 61);
+}
+.buttonCalculateBeet{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.buttonCalculateBeet:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(192, 179, 40);
+    text-shadow: white 1px 0 10px;
+    box-shadow: rgb(255, 255, 255) 1px 0 30px;
+}
+.indexBeet {
+    margin: 0px 20px 0px 20px;
+    color: rgb(54, 72, 61);
+    font-size: 19px;
+    display: inline-block;
+    width: 200px;
+}
+.finalBeet {
+    margin: 20px 20px 0px 50px;
+    width: 130px;
+    background: rgb(232, 223, 121);
+    font-size: 40px;
+    color: rgb(54, 72, 61);
+    text-align: center;
 }

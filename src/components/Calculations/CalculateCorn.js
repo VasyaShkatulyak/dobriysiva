@@ -48,7 +48,7 @@ const CalculateCorn = ({ posivnaResult }) => {
                 <span className="titleCalculate">Калькулятор кукурудзи</span>
 
                 <div className="inputPoints">
-                    <span className="nameArea">Рекомендована густота стояння</span>
+                    <span className="nameArea">Густота стояння</span>
                     <input className="inputAreaPro"
                         type="number"
                         value={hustota}
@@ -86,21 +86,22 @@ const CalculateCorn = ({ posivnaResult }) => {
 
                 <input
                     type="submit"
-                    className="buttonCalculate"
+                    className="buttonCalculateCorn"
                     onClick={cornCalculation}
                     value="Порахувати"
                 />
-                <span className="indexKg">Норма висіву</span>
-                <input className="finalPro" type="number" disabled value={Math.round(norma * 10) / 10} />
-                <span className="kg">тис. шт./га</span>
 
-                <span className="indexKg">Норма висіву на метр погонний</span>
-                <input className="finalPro" type="number" disabled value={Math.round(pogonniyMeter * 10) / 10} />
-                <span className="kg">насінин на м²</span>
+                <span className="indexCorn">Норма висіву</span>
+                <input className="finalCorn" type="number" disabled value={Math.round(norma * 10) / 10} />
+                <span className="kgCorn">тис. шт./га</span>
 
-                <span className="indexKg">Для площі {area} га. потрібно</span>
-                <input className="finalPro" type="number" disabled value={Math.round(areaCount * 10) / 10} />
-                <span className="kg">тис. шт./га</span>
+                <span className="indexCornNorma">Норма висіву <br></br>на метр погонний</span>
+                <input className="finalCorn" type="number" disabled value={Math.round(pogonniyMeter * 10) / 10} />
+                <span className="kgCorn1">насінин<br></br>на м²</span>
+
+                <span className="indexCorn">Для площі {area} га. потрібно</span>
+                <input className="finalCorn" type="number" disabled value={Math.round(areaCount * 10) / 10} />
+                <span className="kgCorn">тис. шт./га</span>
 
 
             </div>
